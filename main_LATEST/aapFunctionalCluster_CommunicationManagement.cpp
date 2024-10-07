@@ -7,6 +7,11 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
+#include "interface_CommunicationManagement_VerificationStatusConfigurationByDataId.hpp"
+/*
+#include "interface_CommunicationManagement_VerificationStatusConfigurationByFreshnessId.hpp"
+*/
+#include "interface_CommunicationManagement_VerificationStatus.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -19,6 +24,19 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+class aapFunctionalCluster_CommunicationManagement:
+      public interface_CommunicationManagement_VerificationStatusConfigurationByDataId
+   ,  public interface_CommunicationManagement_VerificationStatus
+/*
+   ,  public interface_CommunicationManagement_VerificationStatusConfigurationByFreshnessId
+*/
+{
+   void VerifyStatusOverride (void);
+/*
+   void VerifyStatusOverride (void);
+*/
+   void VerificationStatus   (void);
+};
 
 /******************************************************************************/
 /* CONSTS                                                                     */
@@ -35,6 +53,16 @@
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
+void aapFunctionalCluster_CommunicationManagement::VerifyStatusOverride(void){
+}
+
+/*
+void aapFunctionalCluster_CommunicationManagement::VerifyStatusOverride(void){
+}
+*/
+
+void aapFunctionalCluster_CommunicationManagement::VerificationStatus(void){
+}
 
 /******************************************************************************/
 /* EOF                                                                        */

@@ -20,6 +20,10 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+class interface_CommunicationManagement_VerificationStatusConfigurationByFreshnessId{
+   public:
+      virtual void VerifyStatusOverride(void) = 0;
+};
 
 /******************************************************************************/
 /* CONSTS                                                                     */
